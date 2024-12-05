@@ -1,8 +1,13 @@
 // src/cli.js
+
+// src/greetUser.js
 import readlineSync from 'readline-sync';
 
-export const greetUser = () => {
+const greetUser = () => {
   console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question('¿Cuál es tu nombre? ');
-  console.log(`¡Hola, ${jhon}!`);
+  const userName = readlineSync.question('¿Cuál es tu nombre? ');  // Aquí el usuario puede ingresar su nombre
+  console.log(`¡Hola, ${userName}!`);
 };
+
+export default greetUser;
+

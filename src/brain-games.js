@@ -1,8 +1,12 @@
-#!/usr/bin/env node
+// src/greetUser.js
+// import readlineSync from 'readline-sync';
 
+// const greetUser = () => {
+//   console.log('¡Bienvenido a Brain Games!');
+//   const userName = 'John';  // Nombre predeterminado
+//   console.log(`¡Hola, ${userName}!`);
+// };
 
-import  greetUser  from '../src/cli.js'
-greetUser();
-
+// export default greetUser;
 
 
