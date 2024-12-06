@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { welcome } from '../src/cli.js';  // Suponiendo que existe un saludo en cli.js.
+import { welcome } from './src/src-cli.js';  // Suponiendo que existe un saludo en cli.js.
 import { getRandomNumber } from '../src/util.js';
 
 const isEven = (num) => num % 2 === 0;
