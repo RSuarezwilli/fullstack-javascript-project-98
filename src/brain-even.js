@@ -1,37 +1,32 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
-import { welcome } from './src/src-cli.js';  // Suponiendo que existe un saludo en cli.js.
-import { getRandomNumber } from '../src/util.js';
+import greetUser from './src/src-cli.js';
+
+
 
 const isEven = (num) => num % 2 === 0;
 
-const getQuestionAndAnswer = () => {
-  const number = getRandomNumber(10);
-   
-  const correctAnswer = isEven(number) ? 'yes' : 'no';
-  return { question: `Is ${number} even?`, correctAnswer };
-};
-
-const game = () => {
-  welcome();  // Llamada al saludo si está en cli.js
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const greetUser = () => {
+  console.log('¡Bienvenido a los Juegos Mentales!');
+  console.log('Responde "sí" si el número es par, de lo contrario responde "no".');
+  const userName = readlineSync.question('¿Cómo te llamas? ');
+  console.log(`¡Hola, ${userName}!`);
 
   for (let i = 0; i < 3; i++) {
-    const { question, correctAnswer } = getQuestionAndAnswer();
-    console.log(question);
-    
-    const userAnswer = readlineSync.question('Your answer: ').toLowerCase();
+    const number = Math.floor(Math.random() * 100) + 1;
+    const correctAnswer = isEven(number) ? 'sí' : 'no';
+
+    console.log(`Pregunta: ${number}`);
+    const userAnswer = readlineSync.question('Tu respuesta: ');
 
     if (userAnswer !== correctAnswer) {
-      console.log(`Sorry, that's wrong! The correct answer was "${correctAnswer}".`);
+      console.log(`"${userAnswer}" es incorrecto ;(. La respuesta correcta era "${correctAnswer}".`);
+      console.log(`¡Inténtalo de nuevo, ${userName}!`);
       return;
     }
-
-    console.log('Correct!');
+    console.log('¡Correcto!');
   }
 
-  console.log('Congratulations, you won!');
+  console.log(`¡Felicidades, ${userName}!`);
 };
 
-game();
+export default greetUser;
