@@ -1,7 +1,4 @@
-#!/usr/bin/env node
-
 import readlineSync from 'readline-sync';
-
 
 const isPrime = (num) => {
   if (num < 2) return false;
@@ -34,4 +31,4 @@ const playBrainPrime = () => {
   console.log('Congratulations, you won!');
 };
 
-playBrainPrime();
+export default playBrainPrime();

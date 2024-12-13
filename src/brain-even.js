@@ -1,14 +1,10 @@
 import readlineSync from 'readline-sync';
 import greetUser from './src-cli.js';
 
-
-
 const isEven = (num) => num % 2 === 0;
 
 const playGame = () => {
- 
-  
-  const userName = greetUser();
+const userName = greetUser();
   
   console.log('Responde "sí" si el número es par, de lo contrario responde "no".');
   for (let i = 0; i < 3; i++) {

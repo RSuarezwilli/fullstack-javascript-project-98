@@ -20,9 +20,10 @@ Este es un juego de matemáticas simple donde tienes que resolver sumas aleatori
 
 ![alt text](image-1.png) ejercicio brain-evens
 
-![alt text](image.png) ejercicio brain-calc
+![alt text](image-5.png) ejercicio brain-calc
 
 ![alt text](image-2.png) ejercico brain-gcd
 
-![alt text](image-3.png) ejrcicio brain-progrssion
+![alt text](image-3.png) ejercicio brain-progression
 
+![alt text](image-4.png) ejercicio brain-prime

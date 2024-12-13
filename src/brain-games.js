@@ -1,5 +1,4 @@
-//src/greetUser.js
-import readlineSync from 'readline-sync';
+
 
 const greetUser = () => {
   console.log('¡Bienvenido a Brain Games!');

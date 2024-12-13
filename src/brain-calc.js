@@ -4,16 +4,22 @@ function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function runBrainCalc() {
-  console.log('¡Bienvenido al juego de cálculo mental!');
+function playBrainGame() {
+  console.log('¡Bienvenido a Brain Games!');
+
+  // Pedir el nombre del jugador
+  const playerName = readlineSync.question('¿Cuál es tu nombre? ');
+
+  console.log(`¡Hola, ${playerName}!`);
   console.log('Responde correctamente a las operaciones matemáticas.\n');
 
   const operations = ['+', '-', '*'];
   const rounds = 3;
 
+  // Juego de 3 rondas
   for (let i = 0; i < rounds; i++) {
-    const num1 = getRandomNumber(1, 10);
-    const num2 = getRandomNumber(1, 10);
+    const num1 = getRandomNumber(1, 30);  // Se pueden generar números más grandes para mayor desafío
+    const num2 = getRandomNumber(1, 30);
     const operation = operations[getRandomNumber(0, operations.length - 1)];
 
     const question = `${num1} ${operation} ${num2}`;
@@ -37,6 +43,7 @@ function runBrainCalc() {
     console.log(`Pregunta: ${question}`);
     const userAnswer = Number(readlineSync.question('Tu respuesta: '));
 
+    // Comprobar si la respuesta es correcta
     if (userAnswer === correctAnswer) {
       console.log('¡Correcto!');
     } else {
@@ -45,7 +52,8 @@ function runBrainCalc() {
     }
   }
 
-  console.log('¡Felicitaciones! Respondiste correctamente a todas las preguntas.');
+  // Mensaje de felicitación al final del juego
+  console.log(`¡Felicidades, ${playerName}!`);
 }
 
-export default runBrainCalc;
+export default playBrainGame();
