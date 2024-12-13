@@ -20,3 +20,5 @@ Este es un juego de matemáticas simple donde tienes que resolver sumas aleatori
 
 ![alt text](image-1.png) ejercicio brain-evens
 
+![alt text](image.png) ejercicio brain-calc
+

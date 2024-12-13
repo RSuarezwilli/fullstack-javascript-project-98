@@ -1,8 +1,9 @@
 #!/usr/bin/env node
+// import startGame from '../src/index.js';
+import playGame from '../src/brain-calc.js';
 
-import greetUser from '../src/src-cli.js';
-greetUser();
+playGame()
 
-// import runBrainCalc from '../src/games/brain-calc.js';
-// runBrainCalc();
+
+
 
