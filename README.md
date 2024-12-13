@@ -24,3 +24,5 @@ Este es un juego de matemáticas simple donde tienes que resolver sumas aleatori
 
 ![alt text](image-2.png) ejercico brain-gcd
 
+![alt text](image-3.png) ejrcicio brain-progrssion
+
