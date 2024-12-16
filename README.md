@@ -27,3 +27,6 @@ Este es un juego de matemáticas simple donde tienes que resolver sumas aleatori
 ![alt text](image-3.png) ejercicio brain-progression
 
 ![alt text](image-4.png) ejercicio brain-prime
+
+![alt text](image.png) ejercicio brain-prime
+

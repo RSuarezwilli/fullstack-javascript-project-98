@@ -1,6 +1,5 @@
 import readlineSync from 'readline-sync';
 
-// Función para calcular el MCD (Máximo Común Divisor) de dos números
 function getGCD(a, b) {
   while (b !== 0) {
     let temp = b;
@@ -9,13 +8,10 @@ function getGCD(a, b) {
   }
   return a;
 }
-
-// Función para generar un número aleatorio entre un rango
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Función principal para el juego de MCD
 function runBrainGCD() {
   console.log('¡Bienvenido a Brain Games!');
   const userName = readlineSync.question('¿Cuál es tu nombre? ');
