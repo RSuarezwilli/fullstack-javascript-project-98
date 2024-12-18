@@ -17,7 +17,7 @@ const jugarBrainPrime = () => {
   const rondas = 3;
   for (let i = 0; i < rondas; i++) {
     const numero = Math.floor(Math.random() * 100) + 1;
-    const respuestaCorrecta = esPrimo(numero) ? 'sí' : 'no';
+    const respuestaCorrecta = esPrimo(numero) ? 'yes' : 'no';
 
     console.log(`Pregunta: ${numero}`);
     const respuestaUsuario = readlineSync.question('Tu respuesta: ').toLowerCase();
