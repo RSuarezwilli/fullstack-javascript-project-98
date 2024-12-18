@@ -9,7 +9,7 @@ const userName = greetUser();
   console.log('Responde "sí" si el número es par, de lo contrario responde "no".');
   for (let i = 0; i < 3; i++) {
     const number = Math.floor(Math.random() * 100) + 1;
-    const correctAnswer = isEven(number) ? 'si' : 'no';
+    const correctAnswer = isEven(number) ? 'yes' : 'no';
 
     console.log(`Pregunta: ${number}`);
     const userAnswer = readlineSync.question('Tu respuesta: ');

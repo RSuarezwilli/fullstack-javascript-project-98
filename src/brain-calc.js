@@ -7,7 +7,6 @@ function getRandomNumber(min, max) {
 function playBrainGame() {
   console.log('¡Bienvenido a Brain Games!');
 
-  // Pedir el nombre del jugador
   const playerName = readlineSync.question('¿Cuál es tu nombre? ');
 
   console.log(`¡Hola, ${playerName}!`);
@@ -16,9 +15,9 @@ function playBrainGame() {
   const operations = ['+', '-', '*'];
   const rounds = 3;
 
-  // Juego de 3 rondas
+  
   for (let i = 0; i < rounds; i++) {
-    const num1 = getRandomNumber(1, 30);  // Se pueden generar números más grandes para mayor desafío
+    const num1 = getRandomNumber(1, 30);  
     const num2 = getRandomNumber(1, 30);
     const operation = operations[getRandomNumber(0, operations.length - 1)];
 
@@ -43,7 +42,6 @@ function playBrainGame() {
     console.log(`Pregunta: ${question}`);
     const userAnswer = Number(readlineSync.question('Tu respuesta: '));
 
-    // Comprobar si la respuesta es correcta
     if (userAnswer === correctAnswer) {
       console.log('¡Correcto!');
     } else {
@@ -51,9 +49,7 @@ function playBrainGame() {
       return;
     }
   }
-
-  // Mensaje de felicitación al final del juego
-  console.log(`¡Felicidades, ${playerName}!`);
+console.log(`¡Felicidades, ${playerName}!`);
 }
 
 export default playBrainGame();
