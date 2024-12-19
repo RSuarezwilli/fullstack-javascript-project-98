@@ -45,7 +45,7 @@ function playBrainGame() {
     if (userAnswer === correctAnswer) {
       console.log('¡Correcto!');
     } else {
-      console.log(`¡Intentémolo de nuevo, Tirion! ${correctAnswer}.`);
+      console.log(`¡Intentémoslo de nuevo, ${correctAnswer}.!`);
       return;
     }
   }
