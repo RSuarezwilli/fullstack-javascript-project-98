@@ -16,7 +16,7 @@ const userName = greetUser();
 
     if (userAnswer !== correctAnswer) {
       console.log(`"${userAnswer}" es incorrecto ;(. La respuesta correcta era "${correctAnswer}".`);
-      console.log(`¡Inténtalo de nuevo, ${userName}!`);
+      console.log(`¡Intentémoslo de nuevo, ${userName}!`);
       return;
     }
     console.log('¡Correcto!');
