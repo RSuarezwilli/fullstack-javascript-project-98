@@ -10,7 +10,7 @@ function playBrainGame() {
   const playerName = readlineSync.question('¿Cuál es tu nombre? ');
 
   console.log(`¡Hola, ${playerName}!`);
-  console.log('Cuál es el resultado de la expresión');
+  console.log('¿Cuál es el resultado de la expresión?');
 
   const operations = ['+', '-', '*'];
   const rounds = 3;
