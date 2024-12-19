@@ -35,4 +35,4 @@ const jugarBrainPrime = () => {
   console.log(`¡Felicidades, ${nombre}, ganaste!`);
 };
 
-export default jugarBrainPrime();
+export default jugarBrainPrime;

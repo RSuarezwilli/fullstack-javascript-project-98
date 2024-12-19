@@ -48,4 +48,4 @@ function playGame() {
   }
 }
 
-export default playGame();
+export default playGame;

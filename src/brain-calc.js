@@ -45,11 +45,11 @@ function playBrainGame() {
     if (userAnswer === correctAnswer) {
       console.log('¡Correcto!');
     } else {
-      console.log(`¡Intentémoslo de nuevo, ${correctAnswer}.!`);
+      console.log(`¡Intentémoslo de nuevo, ${playerName}!`);
       return;
     }
   }
 console.log(`¡Felicidades, ${playerName}!`);
 }
 
-export default playBrainGame();
+export default playBrainGame;
