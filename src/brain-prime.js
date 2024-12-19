@@ -28,7 +28,7 @@ const jugarBrainPrime = () => {
       return;
     }
 
-    console.log('¡Correcto!');
+    console.log('¡Felicidades, Tirion!');
     
   }
 
