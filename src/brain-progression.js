@@ -29,7 +29,7 @@ function playGame() {
     const { progression, missingNumber } = generateProgression();
     console.log(`Pregunta: ${progression.join(' ')}`);
     
-    const answer = readlineSync.question('Tu respuesta: ');
+    const answer = readlineSync.question('Tu respuesta: ¿Qué número falta en la progresión?');
 
     if (parseInt(answer) === missingNumber) {
       console.log('¡Correcto!');
