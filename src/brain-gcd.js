@@ -1,12 +1,15 @@
 import readlineSync from 'readline-sync';
 
 function getGCD(a, b) {
-  while (b !== 0) {
-    let temp = b;
-    b = a % b;
-    a = temp;
+  let num1 = a;
+  let num2 = b;
+  while (num2 !== 0) {
+    const temp = num2;
+
+    num2 = num1 % num2;
+    num1 = temp;
   }
-  return a;
+  return num1;
 }
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -20,7 +23,7 @@ function runBrainGCD() {
 
   const rounds = 3;
 
-  for (let i = 0; i < rounds; i++) {
+  for (let i = 0; i < rounds; i += 1) {
     const num1 = getRandomNumber(1, 100);
     const num2 = getRandomNumber(1, 100);
 
@@ -42,4 +45,3 @@ function runBrainGCD() {
 }
 
 export default runBrainGCD;
-

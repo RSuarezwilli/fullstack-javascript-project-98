@@ -1,16 +1,16 @@
 import readlineSync from 'readline-sync';
 
 function generateProgression() {
-  const start = Math.floor(Math.random() * 50); 
-  const step = Math.floor(Math.random() * 10) + 2; 
+  const start = Math.floor(Math.random() * 50);
+  const step = Math.floor(Math.random() * 10) + 2;
   const progression = [];
-  const missingIndex = Math.floor(Math.random() * 10); 
+  const missingIndex = Math.floor(Math.random() * 10);
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 10; i += 1) {
     if (i === missingIndex) {
-      progression.push('..'); 
+      progression.push('..');
     } else {
-      progression.push(start + i * step); 
+      progression.push(start + i * step);
     }
   }
 
@@ -25,19 +25,19 @@ function playGame() {
   let score = 0;
   const rounds = 3;
 
-  for (let round = 0; round < rounds; round++) {
+  for (let round = 0; round < rounds; round += 1) {
     const { progression, missingNumber } = generateProgression();
     console.log(`Pregunta: ${progression.join(' ')}`);
-    
+
     const answer = readlineSync.question('Tu respuesta: ¿Qué número falta en la progresión?');
 
-    if (parseInt(answer) === missingNumber) {
+    if (parseInt(answer, 10) === missingNumber) {
       console.log('¡Correcto!');
-      score++;
+      score += 1;
     } else {
       console.log(`'${answer}' es una respuesta incorrecta ;(. La respuesta correcta era '${missingNumber}'.`);
       console.log(`¡Intentémoslo de nuevo, ${name}!`);
-      break; 
+      break;
     }
   }
 

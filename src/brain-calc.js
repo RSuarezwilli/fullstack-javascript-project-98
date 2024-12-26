@@ -1,8 +1,5 @@
 import readlineSync from 'readline-sync';
-
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import getRandomNumber from './util.js';
 
 function playBrainGame() {
   console.log('¡Bienvenido a Brain Games!');
@@ -15,9 +12,8 @@ function playBrainGame() {
   const operations = ['+', '-', '*'];
   const rounds = 3;
 
-  
-  for (let i = 0; i < rounds; i++) {
-    const num1 = getRandomNumber(1, 30);  
+  for (let i = 0; i < rounds; i += 1) {
+    const num1 = getRandomNumber(1, 30);
     const num2 = getRandomNumber(1, 30);
     const operation = operations[getRandomNumber(0, operations.length - 1)];
 
@@ -49,7 +45,7 @@ function playBrainGame() {
       return;
     }
   }
-console.log(`¡Felicidades, ${playerName}!`);
+  console.log(`¡Felicidades, ${playerName}!`);
 }
 
 export default playBrainGame;

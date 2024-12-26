@@ -1,7 +1,3 @@
-
-
-export function getRandomNumber(number) {
- return Math.floor(Math.random() * number) + 1;
-   }
-
-  
+export default function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
