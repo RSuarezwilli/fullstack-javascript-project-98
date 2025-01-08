@@ -2,11 +2,8 @@ import readlineSync from 'readline-sync';
 import getRandomNumber from './util.js';
 
 function playBrainGame() {
-  console.log('¡Bienvenido a Brain Games!');
-
-  const playerName = readlineSync.question('¿Cuál es tu nombre? ');
-
-  console.log(`¡Hola, ${playerName}!`);
+  
+  const playerName= greetUser()
   console.log('¿Cuál es el resultado de la expresión?');
 
   const operations = ['+', '-', '*'];

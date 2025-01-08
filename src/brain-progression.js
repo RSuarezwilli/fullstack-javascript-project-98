@@ -18,9 +18,7 @@ function generateProgression() {
 }
 
 function playGame() {
-  console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question('¿Cuál es tu nombre? ');
-  console.log(`¡Hola, ${name}!`);
+  const name= greetUser()
 
   let score = 0;
   const rounds = 3;

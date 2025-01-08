@@ -8,9 +8,7 @@ const esPrimo = (num) => {
   return true;
 };
 const jugarBrainPrime = () => {
-  console.log('¡Bienvenido a Brain Games!');
-  const nombre = readlineSync.question('¿Cuál es tu nombre? ');
-  console.log(`¡Hola, ${nombre}!`);
+  const nombre= greetUser()
 
   console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
 
