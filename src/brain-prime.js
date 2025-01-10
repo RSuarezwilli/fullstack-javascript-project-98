@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import greetUser from './src-cli.js';
 
 const esPrimo = (num) => {
   if (num < 2) return false;

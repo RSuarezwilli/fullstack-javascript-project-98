@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import greetUser from './src-cli.js';
 
 function getGCD(a, b) {
   let num1 = a;

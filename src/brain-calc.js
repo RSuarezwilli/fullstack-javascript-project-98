@@ -1,5 +1,6 @@
 import readlineSync from 'readline-sync';
 import getRandomNumber from './util.js';
+import greetUser from './src-cli.js';
 
 function playBrainGame() {
   

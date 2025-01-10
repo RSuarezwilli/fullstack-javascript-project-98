@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import greetUser from './src-cli.js';
 
 function generateProgression() {
   const start = Math.floor(Math.random() * 50);
