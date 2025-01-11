@@ -3,8 +3,7 @@ import getRandomNumber from './util.js';
 import greetUser from './src-cli.js';
 
 function playBrainGame() {
-  
-  const playerName= greetUser()
+  const playerName = greetUser();
   console.log('¿Cuál es el resultado de la expresión?');
 
   const operations = ['+', '-', '*'];

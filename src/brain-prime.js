@@ -9,7 +9,7 @@ const esPrimo = (num) => {
   return true;
 };
 const jugarBrainPrime = () => {
-  const nombre= greetUser()
+  const nombre = greetUser();
 
   console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
 

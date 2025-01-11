@@ -19,7 +19,7 @@ function generateProgression() {
 }
 
 function playGame() {
-  const name= greetUser()
+  const name = greetUser();
 
   let score = 0;
   const rounds = 3;

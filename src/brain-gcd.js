@@ -17,7 +17,7 @@ function getRandomNumber(min, max) {
 }
 
 function runBrainGCD() {
-  const userName= greetUser()
+  const userName = greetUser();
   console.log('Encuentra el máximo común divisor de los números dados.\n');
 
   const rounds = 3;
